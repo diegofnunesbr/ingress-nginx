@@ -5,7 +5,7 @@ Este README descreve a instalação e validação do **Ingress Controller NGINX*
 ## Pré-requisitos
 
 - `Kubernetes` instalado
-- IP `192.168.15.3` disponível na rede
+- IP `192.168.1.3` disponível na rede
 
 ---
 
