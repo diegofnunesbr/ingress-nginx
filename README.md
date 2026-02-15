@@ -21,6 +21,7 @@ kubectl apply -f applications/argocd-ingress-nginx.yaml
 ## Remover o Ingress NGINX
 
 ```bash
+cd ingress-nginx
 kubectl delete -f applications/argocd-ingress-nginx.yaml
 kubectl delete namespace ingress-nginx
 ```
