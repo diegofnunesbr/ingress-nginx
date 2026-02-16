@@ -13,8 +13,8 @@ Este guia descreve a instalação e remoção do **ingress-nginx** em um cluster
 ```text
 ingress-nginx/
 ├── applications/
-│   └── argocd.yaml        # Application do Argo CD
-├── ingress-nginx.yaml     # Manifests do ingress-nginx
+│   └── argocd.ingress-nginx.yaml     # Application do Argo CD
+├── ingress-nginx.yaml                # Manifests do ingress-nginx
 └── README.md
 ```
 
@@ -25,13 +25,13 @@ ingress-nginx/
 ```bash
 git clone https://github.com/diegofnunesbr/ingress-nginx.git
 cd ingress-nginx
-kubectl apply -f applications/argocd.yaml
+kubectl apply -f applications/argocd.ingress-nginx.yaml
 ```
 
 ## Remover o ingress-nginx
 
 ```bash
 cd ingress-nginx
-kubectl delete -f applications/argocd.yaml
+kubectl delete -f applications/argocd.ingress-nginx.yaml
 kubectl delete namespace ingress-nginx --ignore-not-found
 ```
