@@ -9,6 +9,8 @@ spec:
     repoURL: https://github.com/diegofnunesbr/ingress-nginx.git
     targetRevision: main
     path: .
+    directory:
+      include: ingress-nginx.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: ingress-nginx
