@@ -25,13 +25,13 @@ ingress-nginx/
 ```bash
 git clone https://github.com/diegofnunesbr/ingress-nginx.git
 cd ingress-nginx
-kubectl apply -f applications/argocd-ingress-nginx.yaml
+kubectl apply -f applications/argocd.yaml
 ```
 
 ## Remover o ingress-nginx
 
 ```bash
 cd ingress-nginx
-kubectl delete -f applications/argocd-ingress-nginx.yaml
+kubectl delete -f applications/argocd.yaml
 kubectl delete namespace ingress-nginx --ignore-not-found
 ```
