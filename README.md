@@ -1,6 +1,6 @@
-# Ingress NGINX
+# ingress-nginx
 
-Este guia descreve a instalação e remoção do **Ingress NGINX** em um cluster Kubernetes, utilizando o manifesto `ingress-nginx.yaml`.
+Este guia descreve a instalação e remoção do **ingress-nginx** em um cluster Kubernetes, utilizando o manifesto `ingress-nginx.yaml`.
 
 ## Pré-requisitos
 
@@ -14,13 +14,13 @@ Este guia descreve a instalação e remoção do **Ingress NGINX** em um cluster
 ingress-nginx/
 ├── applications/
 │   └── argocd.yaml        # Application do Argo CD
-├── ingress-nginx.yaml     # Manifests do Ingress NGINX
+├── ingress-nginx.yaml     # Manifests do ingress-nginx
 └── README.md
 ```
 
 ---
 
-## Instalar o Ingress NGINX
+## Instalar o ingress-nginx
 
 ```bash
 git clone https://github.com/diegofnunesbr/ingress-nginx.git
@@ -28,7 +28,7 @@ cd ingress-nginx
 kubectl apply -f applications/argocd-ingress-nginx.yaml
 ```
 
-## Remover o Ingress NGINX
+## Remover o ingress-nginx
 
 ```bash
 cd ingress-nginx
